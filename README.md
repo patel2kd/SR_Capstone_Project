@@ -5,3 +5,4 @@ We are desinging an application that solves the problem with most health apps ha
 
 ## Use Case diagram for our application
 
+![Image](Use-Case.png)
