@@ -1,8 +1,16 @@
-# SR_Capstone_Project
-## Team-16 Romit Gupta and Kadam Patel
+# flutter_alarm
 
-We are desinging an application that solves the problem with most health apps have that they're either too technical or not technical enough. Our intention is to create a technically sound and easy-to-use application so that children under 18 and seniors do not get bogged down. The solution proposed by the team is a drug tracking application. This application focuses on medication reminders and various features. These features include medication reminders (with alarms), UI/UX simple and user-friendly.
+A new Flutter project.
 
-## Use Case diagram for our application
+## Getting Started
 
-![Image](Use-Case.png)
+This project is a starting point for a Flutter application.
+
+A few resources to get you started if this is your first Flutter project:
+
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.

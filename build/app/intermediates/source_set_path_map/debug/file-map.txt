@@ -1,0 +1,35 @@
+com.example.flutter_alarm.app-jetified-emoji2-1.2.0-0 /Users/kp/.gradle/caches/transforms-3/1935294357b420e980d4d4d7a0930022/transformed/jetified-emoji2-1.2.0/res
+com.example.flutter_alarm.app-lifecycle-livedata-2.5.1-1 /Users/kp/.gradle/caches/transforms-3/1a94bda102e58bb3aafacb40a557cb2e/transformed/lifecycle-livedata-2.5.1/res
+com.example.flutter_alarm.app-lifecycle-reactivestreams-2.5.1-2 /Users/kp/.gradle/caches/transforms-3/24646bbd54b41ac1ed397629e99b40c8/transformed/lifecycle-reactivestreams-2.5.1/res
+com.example.flutter_alarm.app-localbroadcastmanager-1.1.0-3 /Users/kp/.gradle/caches/transforms-3/2caac96ca8e336242153cf46b1b23d33/transformed/localbroadcastmanager-1.1.0/res
+com.example.flutter_alarm.app-jetified-savedstate-1.2.0-4 /Users/kp/.gradle/caches/transforms-3/2ec909322b26a9ef9c6981385de5cace/transformed/jetified-savedstate-1.2.0/res
+com.example.flutter_alarm.app-jetified-core-ktx-1.8.0-5 /Users/kp/.gradle/caches/transforms-3/30a8a8dd834ff40fd421fc7691249f8e/transformed/jetified-core-ktx-1.8.0/res
+com.example.flutter_alarm.app-jetified-window-1.0.0-beta04-6 /Users/kp/.gradle/caches/transforms-3/3e94d6806eb4169e793b1c4cddcd808d/transformed/jetified-window-1.0.0-beta04/res
+com.example.flutter_alarm.app-jetified-lifecycle-process-2.5.1-7 /Users/kp/.gradle/caches/transforms-3/7ea19e588444e6073ca113c0da7d2220/transformed/jetified-lifecycle-process-2.5.1/res
+com.example.flutter_alarm.app-jetified-appcompat-resources-1.5.1-8 /Users/kp/.gradle/caches/transforms-3/9f8d8cb43b0dc11c75da0198e068ae80/transformed/jetified-appcompat-resources-1.5.1/res
+com.example.flutter_alarm.app-jetified-lifecycle-service-2.5.1-9 /Users/kp/.gradle/caches/transforms-3/a047e8c84bff6fde488eeb7477499a21/transformed/jetified-lifecycle-service-2.5.1/res
+com.example.flutter_alarm.app-jetified-lifecycle-viewmodel-savedstate-2.5.1-10 /Users/kp/.gradle/caches/transforms-3/a4d1aed3a0099acb2998fc2f1f3b7987/transformed/jetified-lifecycle-viewmodel-savedstate-2.5.1/res
+com.example.flutter_alarm.app-jetified-annotation-experimental-1.1.0-11 /Users/kp/.gradle/caches/transforms-3/ac057a03636e6585c83693bfe2e3e310/transformed/jetified-annotation-experimental-1.1.0/res
+com.example.flutter_alarm.app-media-1.6.0-12 /Users/kp/.gradle/caches/transforms-3/ace8c89e8d116724ba855cd8335c697a/transformed/media-1.6.0/res
+com.example.flutter_alarm.app-jetified-startup-runtime-1.1.1-13 /Users/kp/.gradle/caches/transforms-3/b6a4d736c9b390790153c7006760387e/transformed/jetified-startup-runtime-1.1.1/res
+com.example.flutter_alarm.app-lifecycle-livedata-core-2.5.1-14 /Users/kp/.gradle/caches/transforms-3/c0ed3b4b6300910df1fc7a93d3546726/transformed/lifecycle-livedata-core-2.5.1/res
+com.example.flutter_alarm.app-jetified-activity-1.5.1-15 /Users/kp/.gradle/caches/transforms-3/c24eccdb7cbac3cd99b06d2341f8265c/transformed/jetified-activity-1.5.1/res
+com.example.flutter_alarm.app-jetified-window-java-1.0.0-beta04-16 /Users/kp/.gradle/caches/transforms-3/cd26984222cc0fa5df3c795677803a3d/transformed/jetified-window-java-1.0.0-beta04/res
+com.example.flutter_alarm.app-lifecycle-viewmodel-2.5.1-17 /Users/kp/.gradle/caches/transforms-3/d5e55288da3c1483fd34363dd52dbeea/transformed/lifecycle-viewmodel-2.5.1/res
+com.example.flutter_alarm.app-lifecycle-runtime-2.5.1-18 /Users/kp/.gradle/caches/transforms-3/d74e87064bfd887836ee81855101ad1f/transformed/lifecycle-runtime-2.5.1/res
+com.example.flutter_alarm.app-appcompat-1.5.1-19 /Users/kp/.gradle/caches/transforms-3/dcc135d6c361b8fd204b4fe4785895ad/transformed/appcompat-1.5.1/res
+com.example.flutter_alarm.app-fragment-1.3.6-20 /Users/kp/.gradle/caches/transforms-3/e8cb2c0c71223e59f27952e303c60096/transformed/fragment-1.3.6/res
+com.example.flutter_alarm.app-jetified-emoji2-views-helper-1.2.0-21 /Users/kp/.gradle/caches/transforms-3/f3b51f3dd48c6329e480ddc7c0453704/transformed/jetified-emoji2-views-helper-1.2.0/res
+com.example.flutter_alarm.app-core-1.8.0-22 /Users/kp/.gradle/caches/transforms-3/f6a12936ecbbfb86057ffa1eb980a294/transformed/core-1.8.0/res
+com.example.flutter_alarm.app-debug-23 /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/android/app/src/debug/res
+com.example.flutter_alarm.app-main-24 /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/android/app/src/main/res
+com.example.flutter_alarm.app-pngs-25 /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/app/generated/res/pngs/debug
+com.example.flutter_alarm.app-resValues-26 /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/app/generated/res/resValues/debug
+com.example.flutter_alarm.app-rs-27 /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/app/generated/res/rs/debug
+com.example.flutter_alarm.app-mergeDebugResources-28 /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/app/intermediates/incremental/debug/mergeDebugResources/merged.dir
+com.example.flutter_alarm.app-mergeDebugResources-29 /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/app/intermediates/incremental/debug/mergeDebugResources/stripped.dir
+com.example.flutter_alarm.app-merged_res-30 /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/app/intermediates/merged_res/debug
+com.example.flutter_alarm.app-packaged_res-31 /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/packaged_res/debug
+com.example.flutter_alarm.app-packaged_res-32 /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/fluttertoast/intermediates/packaged_res/debug
+com.example.flutter_alarm.app-packaged_res-33 /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/path_provider_android/intermediates/packaged_res/debug
+com.example.flutter_alarm.app-packaged_res-34 /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/sqflite/intermediates/packaged_res/debug

@@ -1,4 +1,16 @@
-#Mon Dec 12 13:37:23 IST 2022
-base.0=C\:\\src\\alertmind\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+#Thu Jan 26 22:49:34 EST 2023
+path.4=13/classes.dex
+path.3=1/classes.dex
+path.2=0/classes.dex
+path.1=0/classes.dex
 path.0=classes.dex
+base.4=/Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/app/intermediates/dex/debug/mergeProjectDexDebug/13/classes.dex
+base.3=/Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/app/intermediates/dex/debug/mergeProjectDexDebug/1/classes.dex
+base.2=/Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/app/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+base.1=/Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/app/intermediates/dex/debug/mergeLibDexDebug/0/classes.dex
+base.0=/Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/app/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+renamed.3=classes4.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
 renamed.0=classes.dex
+renamed.4=classes5.dex

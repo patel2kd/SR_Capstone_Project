@@ -1,140 +1,396 @@
 -- Merging decision tree log ---
 application
-INJECTED from C:\src\alertmind\android\app\src\main\AndroidManifest.xml:3:4-33:19
-MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\pr317\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:24:5-31:19
-MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\pr317\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:24:5-31:19
-MERGED from [androidx.core:core:1.6.0] C:\Users\pr317\.gradle\caches\transforms-3\acbce933e4b464a5224ed377a62db1f5\transformed\core-1.6.0\AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.6.0] C:\Users\pr317\.gradle\caches\transforms-3\acbce933e4b464a5224ed377a62db1f5\transformed\core-1.6.0\AndroidManifest.xml:24:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\pr317\.gradle\caches\transforms-3\c6290d38a27dcf8d064fa9cefcb89071\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\pr317\.gradle\caches\transforms-3\c6290d38a27dcf8d064fa9cefcb89071\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+INJECTED from /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/android/app/src/main/AndroidManifest.xml:10:4-71:15
+MERGED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:14:5-50:19
+MERGED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:14:5-50:19
+MERGED from [me.carda:androidcore:0.7.7] /Users/kp/.gradle/caches/transforms-3/dd510f7c7fac129a954257e0e4613726/transformed/jetified-androidcore-0.7.7/AndroidManifest.xml:9:5-16:19
+MERGED from [me.carda:androidcore:0.7.7] /Users/kp/.gradle/caches/transforms-3/dd510f7c7fac129a954257e0e4613726/transformed/jetified-androidcore-0.7.7/AndroidManifest.xml:9:5-16:19
+MERGED from [androidx.window:window:1.0.0-beta04] /Users/kp/.gradle/caches/transforms-3/3e94d6806eb4169e793b1c4cddcd808d/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.window:window:1.0.0-beta04] /Users/kp/.gradle/caches/transforms-3/3e94d6806eb4169e793b1c4cddcd808d/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/kp/.gradle/caches/transforms-3/1935294357b420e980d4d4d7a0930022/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/kp/.gradle/caches/transforms-3/1935294357b420e980d4d4d7a0930022/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.5.1] /Users/kp/.gradle/caches/transforms-3/7ea19e588444e6073ca113c0da7d2220/transformed/jetified-lifecycle-process-2.5.1/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.5.1] /Users/kp/.gradle/caches/transforms-3/7ea19e588444e6073ca113c0da7d2220/transformed/jetified-lifecycle-process-2.5.1/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/kp/.gradle/caches/transforms-3/b6a4d736c9b390790153c7006760387e/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/kp/.gradle/caches/transforms-3/b6a4d736c9b390790153c7006760387e/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.core:core:1.8.0] /Users/kp/.gradle/caches/transforms-3/f6a12936ecbbfb86057ffa1eb980a294/transformed/core-1.8.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.8.0] /Users/kp/.gradle/caches/transforms-3/f6a12936ecbbfb86057ffa1eb980a294/transformed/core-1.8.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/kp/.gradle/caches/transforms-3/24f3d5d957224a6f92ef79bc4f2f9acb/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/kp/.gradle/caches/transforms-3/24f3d5d957224a6f92ef79bc4f2f9acb/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.6.0] C:\Users\pr317\.gradle\caches\transforms-3\acbce933e4b464a5224ed377a62db1f5\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
+		ADDED from [androidx.core:core:1.8.0] /Users/kp/.gradle/caches/transforms-3/f6a12936ecbbfb86057ffa1eb980a294/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
 	android:name
-		INJECTED from C:\src\alertmind\android\app\src\main\AndroidManifest.xml
+		INJECTED from /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/android/app/src/main/AndroidManifest.xml
 manifest
-ADDED from C:\src\alertmind\android\app\src\main\AndroidManifest.xml:1:1-34:12
-INJECTED from C:\src\alertmind\android\app\src\main\AndroidManifest.xml:1:1-34:12
-INJECTED from C:\src\alertmind\android\app\src\main\AndroidManifest.xml:1:1-34:12
-INJECTED from C:\src\alertmind\android\app\src\main\AndroidManifest.xml:1:1-34:12
-MERGED from C:\src\alertmind\android\app\src\main\AndroidManifest.xml:1:1-34:12
-MERGED from [:shared_preferences_android] C:\src\alertmind\build\shared_preferences_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
-MERGED from [:flutter_alarm_clock] C:\src\alertmind\build\flutter_alarm_clock\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-11:12
-MERGED from [:sqflite] C:\src\alertmind\build\sqflite\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
-MERGED from [:flutter_local_notifications] C:\src\alertmind\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
-MERGED from [:fluttertoast] C:\src\alertmind\build\fluttertoast\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
-MERGED from [:path_provider_android] C:\src\alertmind\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
-MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\pr317\.gradle\caches\transforms-3\246793f755122fe14a5802655438cb75\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:17:1-23:12
-MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\pr317\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:17:1-33:12
-MERGED from [androidx.media:media:1.1.0] C:\Users\pr317\.gradle\caches\transforms-3\e0c414601472373f45eb984833a825a1\transformed\media-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\pr317\.gradle\caches\transforms-3\0e0e1a382b52c0572988a1c50e96d2f7\transformed\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\pr317\.gradle\caches\transforms-3\045d2e69ed718df502093495707de7d0\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\pr317\.gradle\caches\transforms-3\906f41b23948e23cf276f1b1ba5ed41e\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.activity:activity:1.0.0] C:\Users\pr317\.gradle\caches\transforms-3\8fa8bdf086632123dcb3f9226ab7b2b9\transformed\jetified-activity-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\pr317\.gradle\caches\transforms-3\d411e96186971239cc9320701a4aa95b\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.6.0] C:\Users\pr317\.gradle\caches\transforms-3\acbce933e4b464a5224ed377a62db1f5\transformed\core-1.6.0\AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\pr317\.gradle\caches\transforms-3\025f0ebb178f72f967988fd890b9b9c6\transformed\lifecycle-runtime-2.2.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\pr317\.gradle\caches\transforms-3\61be2594815516b1d798e8de806d8dcb\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\pr317\.gradle\caches\transforms-3\4d571c0d2420042bbe5204d312a62bb2\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\pr317\.gradle\caches\transforms-3\ab7ce279708bbb9e6bfa95c7580f1bb9\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\pr317\.gradle\caches\transforms-3\9a15d0431946b4658756ca271d093b65\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\pr317\.gradle\caches\transforms-3\c6290d38a27dcf8d064fa9cefcb89071\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\pr317\.gradle\caches\transforms-3\57003bf956257e647aeaeb419a007e24\transformed\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\pr317\.gradle\caches\transforms-3\ed9734c73cdec898947618088fbe87b0\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\pr317\.gradle\caches\transforms-3\58e3540d7f5a5bac6af9a8f8fab44363\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\src\alertmind\android\app\src\debug\AndroidManifest.xml:1:1-8:12
-INJECTED from C:\src\alertmind\android\app\src\debug\AndroidManifest.xml:1:1-8:12
-INJECTED from C:\src\alertmind\android\app\src\debug\AndroidManifest.xml:1:1-8:12
+ADDED from /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/android/app/src/main/AndroidManifest.xml:1:1-72:12
+INJECTED from /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/android/app/src/main/AndroidManifest.xml:1:1-72:12
+INJECTED from /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/android/app/src/main/AndroidManifest.xml:1:1-72:12
+INJECTED from /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/android/app/src/main/AndroidManifest.xml:1:1-72:12
+MERGED from /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/android/app/src/main/AndroidManifest.xml:1:1-72:12
+MERGED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-52:12
+MERGED from [:sqflite] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/sqflite/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:fluttertoast] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/fluttertoast/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:path_provider_android] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/path_provider_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [me.carda:androidcore:0.7.7] /Users/kp/.gradle/caches/transforms-3/dd510f7c7fac129a954257e0e4613726/transformed/jetified-androidcore-0.7.7/AndroidManifest.xml:2:1-18:12
+MERGED from [androidx.appcompat:appcompat-resources:1.5.1] /Users/kp/.gradle/caches/transforms-3/9f8d8cb43b0dc11c75da0198e068ae80/transformed/jetified-appcompat-resources-1.5.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.5.1] /Users/kp/.gradle/caches/transforms-3/dcc135d6c361b8fd204b4fe4785895ad/transformed/appcompat-1.5.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/kp/.gradle/caches/transforms-3/e8cb2c0c71223e59f27952e303c60096/transformed/fragment-1.3.6/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.5.1] /Users/kp/.gradle/caches/transforms-3/c24eccdb7cbac3cd99b06d2341f8265c/transformed/jetified-activity-1.5.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/kp/.gradle/caches/transforms-3/7c4ea2f82987351d4adbd597103b3507/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] /Users/kp/.gradle/caches/transforms-3/d5e55288da3c1483fd34363dd52dbeea/transformed/lifecycle-viewmodel-2.5.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] /Users/kp/.gradle/caches/transforms-3/a4d1aed3a0099acb2998fc2f1f3b7987/transformed/jetified-lifecycle-viewmodel-savedstate-2.5.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/kp/.gradle/caches/transforms-3/cd26984222cc0fa5df3c795677803a3d/transformed/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.window:window:1.0.0-beta04] /Users/kp/.gradle/caches/transforms-3/3e94d6806eb4169e793b1c4cddcd808d/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /Users/kp/.gradle/caches/transforms-3/f3b51f3dd48c6329e480ddc7c0453704/transformed/jetified-emoji2-views-helper-1.2.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/kp/.gradle/caches/transforms-3/1935294357b420e980d4d4d7a0930022/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.5.1] /Users/kp/.gradle/caches/transforms-3/7ea19e588444e6073ca113c0da7d2220/transformed/jetified-lifecycle-process-2.5.1/AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/kp/.gradle/caches/transforms-3/b6a4d736c9b390790153c7006760387e/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/kp/.gradle/caches/transforms-3/f174016f4f0f7ba99dda2d79690f6266/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.5.1] /Users/kp/.gradle/caches/transforms-3/a047e8c84bff6fde488eeb7477499a21/transformed/jetified-lifecycle-service-2.5.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-reactivestreams:2.5.1] /Users/kp/.gradle/caches/transforms-3/24646bbd54b41ac1ed397629e99b40c8/transformed/lifecycle-reactivestreams-2.5.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media:media:1.6.0] /Users/kp/.gradle/caches/transforms-3/ace8c89e8d116724ba855cd8335c697a/transformed/media-1.6.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.8.0] /Users/kp/.gradle/caches/transforms-3/30a8a8dd834ff40fd421fc7691249f8e/transformed/jetified-core-ktx-1.8.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/kp/.gradle/caches/transforms-3/7b736a7e7c7b68b495f44db6b7c7bf59/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/kp/.gradle/caches/transforms-3/34ff1f33023e8892bad825e29b760be3/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/kp/.gradle/caches/transforms-3/e98e343b82fb9bd8ff6c3b7ba83a1ef4/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/kp/.gradle/caches/transforms-3/ff660a19bf19754fe707f4d586e6f73c/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/kp/.gradle/caches/transforms-3/dbbe3c82e081b8987ef7e5057a6fde14/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.8.0] /Users/kp/.gradle/caches/transforms-3/f6a12936ecbbfb86057ffa1eb980a294/transformed/core-1.8.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] /Users/kp/.gradle/caches/transforms-3/d74e87064bfd887836ee81855101ad1f/transformed/lifecycle-runtime-2.5.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.2.0] /Users/kp/.gradle/caches/transforms-3/2ec909322b26a9ef9c6981385de5cace/transformed/jetified-savedstate-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.5.1] /Users/kp/.gradle/caches/transforms-3/1a94bda102e58bb3aafacb40a557cb2e/transformed/lifecycle-livedata-2.5.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] /Users/kp/.gradle/caches/transforms-3/c0ed3b4b6300910df1fc7a93d3546726/transformed/lifecycle-livedata-core-2.5.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.1.0] /Users/kp/.gradle/caches/transforms-3/2caac96ca8e336242153cf46b1b23d33/transformed/localbroadcastmanager-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/kp/.gradle/caches/transforms-3/24f3d5d957224a6f92ef79bc4f2f9acb/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/kp/.gradle/caches/transforms-3/d5dc97a0444dfa066a55316220000c02/transformed/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/kp/.gradle/caches/transforms-3/f1ad0add587d2d7527077804c3c48514/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/kp/.gradle/caches/transforms-3/fd8379944a6be6c864adc2289a6d3f9a/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [me.leolin:ShortcutBadger:1.1.22] /Users/kp/.gradle/caches/transforms-3/6cc7501912f43d1db6695d601a2e880e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:2:1-52:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/kp/.gradle/caches/transforms-3/ac057a03636e6585c83693bfe2e3e310/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
+INJECTED from /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/android/app/src/debug/AndroidManifest.xml:1:1-8:12
+INJECTED from /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/android/app/src/debug/AndroidManifest.xml:1:1-8:12
+INJECTED from /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/android/app/src/debug/AndroidManifest.xml:1:1-8:12
 	package
-		ADDED from C:\src\alertmind\android\app\src\main\AndroidManifest.xml:2:5-36
-		INJECTED from C:\src\alertmind\android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\src\alertmind\android\app\src\debug\AndroidManifest.xml
+		ADDED from /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/android/app/src/main/AndroidManifest.xml:2:5-40
+		INJECTED from /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/android/app/src/debug/AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\src\alertmind\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\src\alertmind\android\app\src\main\AndroidManifest.xml:1:1-34:12
-		INJECTED from C:\src\alertmind\android\app\src\debug\AndroidManifest.xml
+		INJECTED from /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/android/app/src/main/AndroidManifest.xml:1:1-72:12
+		INJECTED from /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/android/app/src/debug/AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\src\alertmind\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\src\alertmind\android\app\src\main\AndroidManifest.xml:1:1-34:12
-		INJECTED from C:\src\alertmind\android\app\src\debug\AndroidManifest.xml
+		INJECTED from /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/android/app/src/main/AndroidManifest.xml:1:1-72:12
+		INJECTED from /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/android/app/src/debug/AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\src\alertmind\android\app\src\main\AndroidManifest.xml:1:11-69
-uses-sdk
-INJECTED from C:\src\alertmind\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\src\alertmind\android\app\src\main\AndroidManifest.xml
-INJECTED from C:\src\alertmind\android\app\src\main\AndroidManifest.xml
-MERGED from [:shared_preferences_android] C:\src\alertmind\build\shared_preferences_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:shared_preferences_android] C:\src\alertmind\build\shared_preferences_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:flutter_alarm_clock] C:\src\alertmind\build\flutter_alarm_clock\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:flutter_alarm_clock] C:\src\alertmind\build\flutter_alarm_clock\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:sqflite] C:\src\alertmind\build\sqflite\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:sqflite] C:\src\alertmind\build\sqflite\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:flutter_local_notifications] C:\src\alertmind\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:flutter_local_notifications] C:\src\alertmind\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:fluttertoast] C:\src\alertmind\build\fluttertoast\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:fluttertoast] C:\src\alertmind\build\fluttertoast\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:path_provider_android] C:\src\alertmind\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:path_provider_android] C:\src\alertmind\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\pr317\.gradle\caches\transforms-3\246793f755122fe14a5802655438cb75\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:19:5-21:41
-MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\pr317\.gradle\caches\transforms-3\246793f755122fe14a5802655438cb75\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:19:5-21:41
-MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\pr317\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\pr317\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.media:media:1.1.0] C:\Users\pr317\.gradle\caches\transforms-3\e0c414601472373f45eb984833a825a1\transformed\media-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.media:media:1.1.0] C:\Users\pr317\.gradle\caches\transforms-3\e0c414601472373f45eb984833a825a1\transformed\media-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\pr317\.gradle\caches\transforms-3\0e0e1a382b52c0572988a1c50e96d2f7\transformed\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\pr317\.gradle\caches\transforms-3\0e0e1a382b52c0572988a1c50e96d2f7\transformed\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\pr317\.gradle\caches\transforms-3\045d2e69ed718df502093495707de7d0\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\pr317\.gradle\caches\transforms-3\045d2e69ed718df502093495707de7d0\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\pr317\.gradle\caches\transforms-3\906f41b23948e23cf276f1b1ba5ed41e\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\pr317\.gradle\caches\transforms-3\906f41b23948e23cf276f1b1ba5ed41e\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.0.0] C:\Users\pr317\.gradle\caches\transforms-3\8fa8bdf086632123dcb3f9226ab7b2b9\transformed\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.0.0] C:\Users\pr317\.gradle\caches\transforms-3\8fa8bdf086632123dcb3f9226ab7b2b9\transformed\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\pr317\.gradle\caches\transforms-3\d411e96186971239cc9320701a4aa95b\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\pr317\.gradle\caches\transforms-3\d411e96186971239cc9320701a4aa95b\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.6.0] C:\Users\pr317\.gradle\caches\transforms-3\acbce933e4b464a5224ed377a62db1f5\transformed\core-1.6.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.6.0] C:\Users\pr317\.gradle\caches\transforms-3\acbce933e4b464a5224ed377a62db1f5\transformed\core-1.6.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\pr317\.gradle\caches\transforms-3\025f0ebb178f72f967988fd890b9b9c6\transformed\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\pr317\.gradle\caches\transforms-3\025f0ebb178f72f967988fd890b9b9c6\transformed\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\pr317\.gradle\caches\transforms-3\61be2594815516b1d798e8de806d8dcb\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\pr317\.gradle\caches\transforms-3\61be2594815516b1d798e8de806d8dcb\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\pr317\.gradle\caches\transforms-3\4d571c0d2420042bbe5204d312a62bb2\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\pr317\.gradle\caches\transforms-3\4d571c0d2420042bbe5204d312a62bb2\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\pr317\.gradle\caches\transforms-3\ab7ce279708bbb9e6bfa95c7580f1bb9\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\pr317\.gradle\caches\transforms-3\ab7ce279708bbb9e6bfa95c7580f1bb9\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\pr317\.gradle\caches\transforms-3\9a15d0431946b4658756ca271d093b65\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\pr317\.gradle\caches\transforms-3\9a15d0431946b4658756ca271d093b65\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\pr317\.gradle\caches\transforms-3\c6290d38a27dcf8d064fa9cefcb89071\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\pr317\.gradle\caches\transforms-3\c6290d38a27dcf8d064fa9cefcb89071\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\pr317\.gradle\caches\transforms-3\57003bf956257e647aeaeb419a007e24\transformed\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\pr317\.gradle\caches\transforms-3\57003bf956257e647aeaeb419a007e24\transformed\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\pr317\.gradle\caches\transforms-3\ed9734c73cdec898947618088fbe87b0\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\pr317\.gradle\caches\transforms-3\ed9734c73cdec898947618088fbe87b0\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\pr317\.gradle\caches\transforms-3\58e3540d7f5a5bac6af9a8f8fab44363\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\pr317\.gradle\caches\transforms-3\58e3540d7f5a5bac6af9a8f8fab44363\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
-INJECTED from C:\src\alertmind\android\app\src\debug\AndroidManifest.xml
-INJECTED from C:\src\alertmind\android\app\src\debug\AndroidManifest.xml
-	android:targetSdkVersion
-		INJECTED from C:\src\alertmind\android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\src\alertmind\android\app\src\debug\AndroidManifest.xml
-	android:minSdkVersion
-		INJECTED from C:\src\alertmind\android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\src\alertmind\android\app\src\debug\AndroidManifest.xml
+		ADDED from /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/android/app/src/main/AndroidManifest.xml:3:5-81
+MERGED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-81
+MERGED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-81
+	android:name
+		ADDED from /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/android/app/src/main/AndroidManifest.xml:3:22-78
+uses-permission#android.permission.VIBRATE
+ADDED from /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/android/app/src/main/AndroidManifest.xml:4:5-66
+MERGED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:12:5-66
+MERGED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:12:5-66
+	android:name
+		ADDED from /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/android/app/src/main/AndroidManifest.xml:4:22-63
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/android/app/src/main/AndroidManifest.xml:6:5-77
+	android:name
+		ADDED from /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/android/app/src/main/AndroidManifest.xml:6:22-74
+uses-permission#android.permission.SCHEDULE_EXACT_ALARM
+ADDED from /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/android/app/src/main/AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/android/app/src/main/AndroidManifest.xml:7:22-76
 uses-permission#android.permission.INTERNET
-ADDED from C:\src\alertmind\android\app\src\debug\AndroidManifest.xml:7:5-66
+ADDED from /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/android/app/src/main/AndroidManifest.xml:8:1-63
+MERGED from /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/android/app/src/main/AndroidManifest.xml:8:1-63
+MERGED from /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/android/app/src/main/AndroidManifest.xml:8:1-63
 	android:name
-		ADDED from C:\src\alertmind\android\app\src\debug\AndroidManifest.xml:7:22-64
-uses-permission#com.android.alarm.permission.SET_ALARM
-ADDED from [:flutter_alarm_clock] C:\src\alertmind\build\flutter_alarm_clock\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-78
+		ADDED from /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/android/app/src/main/AndroidManifest.xml:8:18-60
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/android/app/src/main/AndroidManifest.xml:9:4-66
 	android:name
-		ADDED from [:flutter_alarm_clock] C:\src\alertmind\build\flutter_alarm_clock\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-75
+		ADDED from /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/android/app/src/main/AndroidManifest.xml:9:21-64
+uses-sdk
+INJECTED from /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/android/app/src/main/AndroidManifest.xml
+MERGED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:sqflite] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/sqflite/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:sqflite] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/sqflite/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:fluttertoast] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/fluttertoast/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:fluttertoast] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/fluttertoast/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:path_provider_android] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/path_provider_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:path_provider_android] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/path_provider_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [me.carda:androidcore:0.7.7] /Users/kp/.gradle/caches/transforms-3/dd510f7c7fac129a954257e0e4613726/transformed/jetified-androidcore-0.7.7/AndroidManifest.xml:5:5-7:41
+MERGED from [me.carda:androidcore:0.7.7] /Users/kp/.gradle/caches/transforms-3/dd510f7c7fac129a954257e0e4613726/transformed/jetified-androidcore-0.7.7/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat-resources:1.5.1] /Users/kp/.gradle/caches/transforms-3/9f8d8cb43b0dc11c75da0198e068ae80/transformed/jetified-appcompat-resources-1.5.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.5.1] /Users/kp/.gradle/caches/transforms-3/9f8d8cb43b0dc11c75da0198e068ae80/transformed/jetified-appcompat-resources-1.5.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.5.1] /Users/kp/.gradle/caches/transforms-3/dcc135d6c361b8fd204b4fe4785895ad/transformed/appcompat-1.5.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.5.1] /Users/kp/.gradle/caches/transforms-3/dcc135d6c361b8fd204b4fe4785895ad/transformed/appcompat-1.5.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/kp/.gradle/caches/transforms-3/e8cb2c0c71223e59f27952e303c60096/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/kp/.gradle/caches/transforms-3/e8cb2c0c71223e59f27952e303c60096/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.5.1] /Users/kp/.gradle/caches/transforms-3/c24eccdb7cbac3cd99b06d2341f8265c/transformed/jetified-activity-1.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.5.1] /Users/kp/.gradle/caches/transforms-3/c24eccdb7cbac3cd99b06d2341f8265c/transformed/jetified-activity-1.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.loader:loader:1.0.0] /Users/kp/.gradle/caches/transforms-3/7c4ea2f82987351d4adbd597103b3507/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/kp/.gradle/caches/transforms-3/7c4ea2f82987351d4adbd597103b3507/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] /Users/kp/.gradle/caches/transforms-3/d5e55288da3c1483fd34363dd52dbeea/transformed/lifecycle-viewmodel-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] /Users/kp/.gradle/caches/transforms-3/d5e55288da3c1483fd34363dd52dbeea/transformed/lifecycle-viewmodel-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] /Users/kp/.gradle/caches/transforms-3/a4d1aed3a0099acb2998fc2f1f3b7987/transformed/jetified-lifecycle-viewmodel-savedstate-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] /Users/kp/.gradle/caches/transforms-3/a4d1aed3a0099acb2998fc2f1f3b7987/transformed/jetified-lifecycle-viewmodel-savedstate-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/kp/.gradle/caches/transforms-3/cd26984222cc0fa5df3c795677803a3d/transformed/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/kp/.gradle/caches/transforms-3/cd26984222cc0fa5df3c795677803a3d/transformed/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.window:window:1.0.0-beta04] /Users/kp/.gradle/caches/transforms-3/3e94d6806eb4169e793b1c4cddcd808d/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0-beta04] /Users/kp/.gradle/caches/transforms-3/3e94d6806eb4169e793b1c4cddcd808d/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /Users/kp/.gradle/caches/transforms-3/f3b51f3dd48c6329e480ddc7c0453704/transformed/jetified-emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /Users/kp/.gradle/caches/transforms-3/f3b51f3dd48c6329e480ddc7c0453704/transformed/jetified-emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/kp/.gradle/caches/transforms-3/1935294357b420e980d4d4d7a0930022/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/kp/.gradle/caches/transforms-3/1935294357b420e980d4d4d7a0930022/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.5.1] /Users/kp/.gradle/caches/transforms-3/7ea19e588444e6073ca113c0da7d2220/transformed/jetified-lifecycle-process-2.5.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.5.1] /Users/kp/.gradle/caches/transforms-3/7ea19e588444e6073ca113c0da7d2220/transformed/jetified-lifecycle-process-2.5.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/kp/.gradle/caches/transforms-3/b6a4d736c9b390790153c7006760387e/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/kp/.gradle/caches/transforms-3/b6a4d736c9b390790153c7006760387e/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/kp/.gradle/caches/transforms-3/f174016f4f0f7ba99dda2d79690f6266/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/kp/.gradle/caches/transforms-3/f174016f4f0f7ba99dda2d79690f6266/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.5.1] /Users/kp/.gradle/caches/transforms-3/a047e8c84bff6fde488eeb7477499a21/transformed/jetified-lifecycle-service-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.5.1] /Users/kp/.gradle/caches/transforms-3/a047e8c84bff6fde488eeb7477499a21/transformed/jetified-lifecycle-service-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-reactivestreams:2.5.1] /Users/kp/.gradle/caches/transforms-3/24646bbd54b41ac1ed397629e99b40c8/transformed/lifecycle-reactivestreams-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-reactivestreams:2.5.1] /Users/kp/.gradle/caches/transforms-3/24646bbd54b41ac1ed397629e99b40c8/transformed/lifecycle-reactivestreams-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.6.0] /Users/kp/.gradle/caches/transforms-3/ace8c89e8d116724ba855cd8335c697a/transformed/media-1.6.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.6.0] /Users/kp/.gradle/caches/transforms-3/ace8c89e8d116724ba855cd8335c697a/transformed/media-1.6.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.8.0] /Users/kp/.gradle/caches/transforms-3/30a8a8dd834ff40fd421fc7691249f8e/transformed/jetified-core-ktx-1.8.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.8.0] /Users/kp/.gradle/caches/transforms-3/30a8a8dd834ff40fd421fc7691249f8e/transformed/jetified-core-ktx-1.8.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/kp/.gradle/caches/transforms-3/7b736a7e7c7b68b495f44db6b7c7bf59/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/kp/.gradle/caches/transforms-3/7b736a7e7c7b68b495f44db6b7c7bf59/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/kp/.gradle/caches/transforms-3/34ff1f33023e8892bad825e29b760be3/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/kp/.gradle/caches/transforms-3/34ff1f33023e8892bad825e29b760be3/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/kp/.gradle/caches/transforms-3/e98e343b82fb9bd8ff6c3b7ba83a1ef4/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/kp/.gradle/caches/transforms-3/e98e343b82fb9bd8ff6c3b7ba83a1ef4/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/kp/.gradle/caches/transforms-3/ff660a19bf19754fe707f4d586e6f73c/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/kp/.gradle/caches/transforms-3/ff660a19bf19754fe707f4d586e6f73c/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] /Users/kp/.gradle/caches/transforms-3/dbbe3c82e081b8987ef7e5057a6fde14/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/kp/.gradle/caches/transforms-3/dbbe3c82e081b8987ef7e5057a6fde14/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.8.0] /Users/kp/.gradle/caches/transforms-3/f6a12936ecbbfb86057ffa1eb980a294/transformed/core-1.8.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.8.0] /Users/kp/.gradle/caches/transforms-3/f6a12936ecbbfb86057ffa1eb980a294/transformed/core-1.8.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] /Users/kp/.gradle/caches/transforms-3/d74e87064bfd887836ee81855101ad1f/transformed/lifecycle-runtime-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] /Users/kp/.gradle/caches/transforms-3/d74e87064bfd887836ee81855101ad1f/transformed/lifecycle-runtime-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] /Users/kp/.gradle/caches/transforms-3/2ec909322b26a9ef9c6981385de5cace/transformed/jetified-savedstate-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] /Users/kp/.gradle/caches/transforms-3/2ec909322b26a9ef9c6981385de5cace/transformed/jetified-savedstate-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.5.1] /Users/kp/.gradle/caches/transforms-3/1a94bda102e58bb3aafacb40a557cb2e/transformed/lifecycle-livedata-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.5.1] /Users/kp/.gradle/caches/transforms-3/1a94bda102e58bb3aafacb40a557cb2e/transformed/lifecycle-livedata-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] /Users/kp/.gradle/caches/transforms-3/c0ed3b4b6300910df1fc7a93d3546726/transformed/lifecycle-livedata-core-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] /Users/kp/.gradle/caches/transforms-3/c0ed3b4b6300910df1fc7a93d3546726/transformed/lifecycle-livedata-core-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.1.0] /Users/kp/.gradle/caches/transforms-3/2caac96ca8e336242153cf46b1b23d33/transformed/localbroadcastmanager-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.1.0] /Users/kp/.gradle/caches/transforms-3/2caac96ca8e336242153cf46b1b23d33/transformed/localbroadcastmanager-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/kp/.gradle/caches/transforms-3/24f3d5d957224a6f92ef79bc4f2f9acb/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/kp/.gradle/caches/transforms-3/24f3d5d957224a6f92ef79bc4f2f9acb/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/kp/.gradle/caches/transforms-3/d5dc97a0444dfa066a55316220000c02/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/kp/.gradle/caches/transforms-3/d5dc97a0444dfa066a55316220000c02/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/kp/.gradle/caches/transforms-3/f1ad0add587d2d7527077804c3c48514/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/kp/.gradle/caches/transforms-3/f1ad0add587d2d7527077804c3c48514/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/kp/.gradle/caches/transforms-3/fd8379944a6be6c864adc2289a6d3f9a/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/kp/.gradle/caches/transforms-3/fd8379944a6be6c864adc2289a6d3f9a/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [me.leolin:ShortcutBadger:1.1.22] /Users/kp/.gradle/caches/transforms-3/6cc7501912f43d1db6695d601a2e880e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:7:5-9:41
+MERGED from [me.leolin:ShortcutBadger:1.1.22] /Users/kp/.gradle/caches/transforms-3/6cc7501912f43d1db6695d601a2e880e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/kp/.gradle/caches/transforms-3/ac057a03636e6585c83693bfe2e3e310/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/kp/.gradle/caches/transforms-3/ac057a03636e6585c83693bfe2e3e310/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+INJECTED from /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/android/app/src/debug/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/android/app/src/debug/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/android/app/src/debug/AndroidManifest.xml
+uses-permission#android.permission.POST_NOTIFICATIONS
+ADDED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-77
+	android:name
+		ADDED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-74
+uses-permission#android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS
+ADDED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-89
+	android:name
+		ADDED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-86
+receiver#me.carda.awesome_notifications.DartNotificationActionReceiver
+ADDED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:15:9-17:39
+	android:exported
+		ADDED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-36
+	android:name
+		ADDED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-89
+receiver#me.carda.awesome_notifications.DartDismissedNotificationReceiver
+ADDED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:18:9-20:39
+	android:exported
+		ADDED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-36
+	android:name
+		ADDED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-92
+receiver#me.carda.awesome_notifications.DartScheduledNotificationReceiver
+ADDED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:21:9-23:39
+	android:exported
+		ADDED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-36
+	android:name
+		ADDED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:22:13-92
+receiver#me.carda.awesome_notifications.DartRefreshSchedulesReceiver
+ADDED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:24:9-38:20
+	android:enabled
+		ADDED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:26:13-35
+	android:exported
+		ADDED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-36
+	android:name
+		ADDED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:25:13-87
+intent-filter#action:name:android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED+action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.LOCKED_BOOT_COMPLETED+action:name:android.intent.action.MY_PACKAGE_REPLACED+action:name:android.intent.action.QUICKBOOT_POWERON+action:name:com.htc.intent.action.QUICKBOOT_POWERON+category:name:android.intent.category.DEFAULT
+ADDED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-37:29
+category#android.intent.category.DEFAULT
+ADDED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:17-76
+	android:name
+		ADDED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:27-73
+action#android.intent.action.BOOT_COMPLETED
+ADDED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:31:17-79
+	android:name
+		ADDED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:31:25-76
+action#android.intent.action.LOCKED_BOOT_COMPLETED
+ADDED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:32:17-86
+	android:name
+		ADDED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:32:25-83
+action#android.intent.action.MY_PACKAGE_REPLACED
+ADDED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:33:17-84
+	android:name
+		ADDED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:33:25-81
+action#android.intent.action.QUICKBOOT_POWERON
+ADDED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:34:25-79
+action#com.htc.intent.action.QUICKBOOT_POWERON
+ADDED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:35:17-82
+	android:name
+		ADDED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:35:25-79
+action#android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED
+ADDED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:36:17-107
+	android:name
+		ADDED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:36:25-104
+service#me.carda.awesome_notifications.DartBackgroundService
+ADDED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:40:9-43:72
+	android:exported
+		ADDED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:42:13-37
+	android:permission
+		ADDED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:43:13-69
+	android:name
+		ADDED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:41:13-80
+service#me.carda.awesome_notifications.core.services.ForegroundService
+ADDED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:44:9-49:43
+MERGED from [me.carda:androidcore:0.7.7] /Users/kp/.gradle/caches/transforms-3/dd510f7c7fac129a954257e0e4613726/transformed/jetified-androidcore-0.7.7/AndroidManifest.xml:10:9-15:43
+MERGED from [me.carda:androidcore:0.7.7] /Users/kp/.gradle/caches/transforms-3/dd510f7c7fac129a954257e0e4613726/transformed/jetified-androidcore-0.7.7/AndroidManifest.xml:10:9-15:43
+	android:enabled
+		ADDED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:46:13-35
+	android:exported
+		ADDED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:47:13-37
+	android:stopWithTask
+		ADDED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:49:13-40
+	android:foregroundServiceType
+		ADDED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:48:13-54
+	android:name
+		ADDED from [:awesome_notifications] /Users/kp/spring23/Medicine Alaram App/final project/flutter_alarm/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:45:13-90
 uses-library#androidx.window.extensions
-ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\pr317\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+ADDED from [androidx.window:window:1.0.0-beta04] /Users/kp/.gradle/caches/transforms-3/3e94d6806eb4169e793b1c4cddcd808d/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
 	android:required
-		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\pr317\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+		ADDED from [androidx.window:window:1.0.0-beta04] /Users/kp/.gradle/caches/transforms-3/3e94d6806eb4169e793b1c4cddcd808d/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
 	android:name
-		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\pr317\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+		ADDED from [androidx.window:window:1.0.0-beta04] /Users/kp/.gradle/caches/transforms-3/3e94d6806eb4169e793b1c4cddcd808d/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
 uses-library#androidx.window.sidecar
-ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\pr317\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+ADDED from [androidx.window:window:1.0.0-beta04] /Users/kp/.gradle/caches/transforms-3/3e94d6806eb4169e793b1c4cddcd808d/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
 	android:required
-		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\pr317\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+		ADDED from [androidx.window:window:1.0.0-beta04] /Users/kp/.gradle/caches/transforms-3/3e94d6806eb4169e793b1c4cddcd808d/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
 	android:name
-		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\pr317\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+		ADDED from [androidx.window:window:1.0.0-beta04] /Users/kp/.gradle/caches/transforms-3/3e94d6806eb4169e793b1c4cddcd808d/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/kp/.gradle/caches/transforms-3/1935294357b420e980d4d4d7a0930022/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.5.1] /Users/kp/.gradle/caches/transforms-3/7ea19e588444e6073ca113c0da7d2220/transformed/jetified-lifecycle-process-2.5.1/AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.5.1] /Users/kp/.gradle/caches/transforms-3/7ea19e588444e6073ca113c0da7d2220/transformed/jetified-lifecycle-process-2.5.1/AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/kp/.gradle/caches/transforms-3/b6a4d736c9b390790153c7006760387e/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/kp/.gradle/caches/transforms-3/b6a4d736c9b390790153c7006760387e/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/kp/.gradle/caches/transforms-3/1935294357b420e980d4d4d7a0930022/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/kp/.gradle/caches/transforms-3/1935294357b420e980d4d4d7a0930022/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/kp/.gradle/caches/transforms-3/1935294357b420e980d4d4d7a0930022/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/kp/.gradle/caches/transforms-3/1935294357b420e980d4d4d7a0930022/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/kp/.gradle/caches/transforms-3/1935294357b420e980d4d4d7a0930022/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/kp/.gradle/caches/transforms-3/1935294357b420e980d4d4d7a0930022/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/kp/.gradle/caches/transforms-3/1935294357b420e980d4d4d7a0930022/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.5.1] /Users/kp/.gradle/caches/transforms-3/7ea19e588444e6073ca113c0da7d2220/transformed/jetified-lifecycle-process-2.5.1/AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.5.1] /Users/kp/.gradle/caches/transforms-3/7ea19e588444e6073ca113c0da7d2220/transformed/jetified-lifecycle-process-2.5.1/AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.5.1] /Users/kp/.gradle/caches/transforms-3/7ea19e588444e6073ca113c0da7d2220/transformed/jetified-lifecycle-process-2.5.1/AndroidManifest.xml:32:17-78
+uses-permission#com.sec.android.provider.badge.permission.READ
+ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/kp/.gradle/caches/transforms-3/6cc7501912f43d1db6695d601a2e880e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:19:5-86
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/kp/.gradle/caches/transforms-3/6cc7501912f43d1db6695d601a2e880e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:19:22-83
+uses-permission#com.sec.android.provider.badge.permission.WRITE
+ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/kp/.gradle/caches/transforms-3/6cc7501912f43d1db6695d601a2e880e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:20:5-87
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/kp/.gradle/caches/transforms-3/6cc7501912f43d1db6695d601a2e880e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:20:22-84
+uses-permission#com.htc.launcher.permission.READ_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/kp/.gradle/caches/transforms-3/6cc7501912f43d1db6695d601a2e880e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:23:5-81
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/kp/.gradle/caches/transforms-3/6cc7501912f43d1db6695d601a2e880e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:23:22-78
+uses-permission#com.htc.launcher.permission.UPDATE_SHORTCUT
+ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/kp/.gradle/caches/transforms-3/6cc7501912f43d1db6695d601a2e880e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:24:5-83
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/kp/.gradle/caches/transforms-3/6cc7501912f43d1db6695d601a2e880e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:24:22-80
+uses-permission#com.sonyericsson.home.permission.BROADCAST_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/kp/.gradle/caches/transforms-3/6cc7501912f43d1db6695d601a2e880e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:27:5-88
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/kp/.gradle/caches/transforms-3/6cc7501912f43d1db6695d601a2e880e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:27:22-85
+uses-permission#com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/kp/.gradle/caches/transforms-3/6cc7501912f43d1db6695d601a2e880e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:28:5-92
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/kp/.gradle/caches/transforms-3/6cc7501912f43d1db6695d601a2e880e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:28:22-89
+uses-permission#com.anddoes.launcher.permission.UPDATE_COUNT
+ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/kp/.gradle/caches/transforms-3/6cc7501912f43d1db6695d601a2e880e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:31:5-84
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/kp/.gradle/caches/transforms-3/6cc7501912f43d1db6695d601a2e880e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:31:22-81
+uses-permission#com.majeur.launcher.permission.UPDATE_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/kp/.gradle/caches/transforms-3/6cc7501912f43d1db6695d601a2e880e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:34:5-83
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/kp/.gradle/caches/transforms-3/6cc7501912f43d1db6695d601a2e880e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:34:22-80
+uses-permission#com.huawei.android.launcher.permission.CHANGE_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/kp/.gradle/caches/transforms-3/6cc7501912f43d1db6695d601a2e880e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:37:5-91
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/kp/.gradle/caches/transforms-3/6cc7501912f43d1db6695d601a2e880e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:37:22-88
+uses-permission#com.huawei.android.launcher.permission.READ_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/kp/.gradle/caches/transforms-3/6cc7501912f43d1db6695d601a2e880e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:38:5-92
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/kp/.gradle/caches/transforms-3/6cc7501912f43d1db6695d601a2e880e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:38:22-89
+uses-permission#com.huawei.android.launcher.permission.WRITE_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/kp/.gradle/caches/transforms-3/6cc7501912f43d1db6695d601a2e880e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:39:5-93
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/kp/.gradle/caches/transforms-3/6cc7501912f43d1db6695d601a2e880e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:39:22-90
+uses-permission#android.permission.READ_APP_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/kp/.gradle/caches/transforms-3/6cc7501912f43d1db6695d601a2e880e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:42:5-73
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/kp/.gradle/caches/transforms-3/6cc7501912f43d1db6695d601a2e880e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:42:22-70
+uses-permission#com.oppo.launcher.permission.READ_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/kp/.gradle/caches/transforms-3/6cc7501912f43d1db6695d601a2e880e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:45:5-82
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/kp/.gradle/caches/transforms-3/6cc7501912f43d1db6695d601a2e880e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:45:22-79
+uses-permission#com.oppo.launcher.permission.WRITE_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/kp/.gradle/caches/transforms-3/6cc7501912f43d1db6695d601a2e880e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:46:5-83
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/kp/.gradle/caches/transforms-3/6cc7501912f43d1db6695d601a2e880e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:46:22-80
+uses-permission#me.everything.badger.permission.BADGE_COUNT_READ
+ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/kp/.gradle/caches/transforms-3/6cc7501912f43d1db6695d601a2e880e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:49:5-88
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/kp/.gradle/caches/transforms-3/6cc7501912f43d1db6695d601a2e880e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:49:22-85
+uses-permission#me.everything.badger.permission.BADGE_COUNT_WRITE
+ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/kp/.gradle/caches/transforms-3/6cc7501912f43d1db6695d601a2e880e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:5-89
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] /Users/kp/.gradle/caches/transforms-3/6cc7501912f43d1db6695d601a2e880e/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:22-86

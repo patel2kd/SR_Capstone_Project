@@ -1,14 +1,32 @@
+// import 'package:flutter_alarm/fetchdata.dart';
+import 'package:flutter_alarm/mainscreen.dart';
 import 'package:http/http.dart' as http;
 import 'package:fluttertoast/fluttertoast.dart';
 import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:alertmind/main.dart';
-import 'package:alertmind/utils/constants.dart';
-import 'package:alertmind/widgets/registertitle.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+import 'package:flutter_alarm/utils/constants.dart';
+import 'package:flutter_alarm/widgets/registertitle.dart';
 import 'package:velocity_x/velocity_x.dart';
 import 'package:localstorage/localstorage.dart';
+
+var user = [];
+@override
+fetchuser() async {
+  final String path = '${url}${index}';
+  print(path);
+  var response = await http.get(Uri.parse(path));
+  print(response.body);
+  if (response.statusCode == 200) {
+    var data = jsonDecode(response.body);
+    user = data;
+    print("data ${data}");
+    return user;
+  } else {
+    print("data ");
+    print(response.body);
+    return user;
+  }
+}
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -28,14 +46,11 @@ class _LoginState extends State<Login> {
   TextEditingController econtact = new TextEditingController();
   TextEditingController password = new TextEditingController();
   TextEditingController rpassword = new TextEditingController();
-
 //initial variables
-  @override
-  late final String data = storage.getItem('name');
   bool processing = false;
   late String getData;
-
   bool validate = false;
+  bool validate1 = false;
   late String merror = '';
   late String emerror = '';
   late String eerror = '';
@@ -48,26 +63,12 @@ class _LoginState extends State<Login> {
   late String eCerror = '';
   late String rperror = '';
 
-  var user = [];
-  @override
-  fetchuser() async {
-    final response =
-        await http.get(Uri.parse('http://192.168.231.146/demo/index.php'));
-
-    if (response.statusCode == 200) {
-      var data = jsonDecode(response.body)["p_res"];
-      print(response.body);
-      // setState(() {
-      setState(() {
-        user = data;
-      });
-      return 'true';
-    } else {
-      return 'false';
-    }
-  }
-
   //Singup form
+  void initState() {
+    fetchuser();
+    print(user);
+    super.initState();
+  }
 
   Widget SingUp() {
     return Expanded(
@@ -78,14 +79,26 @@ class _LoginState extends State<Login> {
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Container(
-                    child: 'Sign Up'
-                        .text
-                        .fontWeight(FontWeight.bold)
-                        .xl3
-                        .white
-                        .make()
-                        .py8()),
-                '$merror'.text.align(TextAlign.justify).red400.make().py2(),
+                    child: Padding(
+                  padding: const EdgeInsets.only(top: 14.0),
+                  child: 'Sign Up'
+                      .text
+                      .fontWeight(FontWeight.bold)
+                      .xl3
+                      .white
+                      .make(),
+                )),
+                Padding(
+                  padding: const EdgeInsets.only(top: 8, bottom: 8.0),
+                  child: '$merror'
+                      .text
+                      .align(TextAlign.justify)
+                      .red400
+                      .medium
+                      .maxFontSize(12)
+                      .minFontSize(10)
+                      .make(),
+                ),
                 Container(
                   width: 315,
                   margin: EdgeInsets.only(left: 20, right: 20),
@@ -96,298 +109,314 @@ class _LoginState extends State<Login> {
                   ),
                   child: Column(
                     children: [
-                      TextFormField(
-                        onChanged: (value) => {
-                          if (value.isEmpty)
-                            {
-                              setState(() {
-                                validate = false;
-                                nerror = 'Plese fill';
-                              }),
-                            }
-                          else
-                            {
-                              setState(() {
-                                validate = true;
-                                nerror;
-                              }),
-                            }
-                        },
-                        textAlign: TextAlign.start,
-                        decoration: InputDecoration(
-                          fillColor: Color(0xfffaebeb),
-                          contentPadding: EdgeInsets.all(12),
-                          border: new OutlineInputBorder(
-                            borderRadius: new BorderRadius.circular(10.0),
-                            borderSide:
-                                BorderSide(color: Color.fromARGB(255, 0, 0, 0)),
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: 8.0),
+                        child: TextFormField(
+                          onChanged: (value) => {
+                            if (value.isEmpty)
+                              {
+                                setState(() {
+                                  validate1 = false;
+                                  nerror = 'Plese fill';
+                                }),
+                              }
+                            else
+                              {
+                                setState(() {
+                                  validate1 = true;
+                                  nerror;
+                                }),
+                              }
+                          },
+                          textAlign: TextAlign.start,
+                          decoration: InputDecoration(
+                            fillColor: Color(0xfffaebeb),
+                            contentPadding: EdgeInsets.all(12),
+                            border: new OutlineInputBorder(
+                              borderRadius: new BorderRadius.circular(10.0),
+                              borderSide: BorderSide(
+                                  color: Color.fromARGB(255, 0, 0, 0)),
+                            ),
+                            focusedBorder: new OutlineInputBorder(
+                              borderRadius: new BorderRadius.circular(10.0),
+                              borderSide: BorderSide(color: Color(0xff3F8AE0)),
+                            ),
+                            errorBorder: new OutlineInputBorder(
+                              borderRadius: new BorderRadius.circular(10.0),
+                              borderSide: BorderSide(color: colorBlue),
+                            ),
+                            disabledBorder: InputBorder.none,
+                            alignLabelWithHint: true,
+                            hintStyle: TextStyle(
+                                color: Colors.black,
+                                decorationColor: Colors.white),
+                            hintText: 'Enter Name',
+                            errorText: nerror,
                           ),
-                          focusedBorder: new OutlineInputBorder(
-                            borderRadius: new BorderRadius.circular(10.0),
-                            borderSide: BorderSide(color: Color(0xff3F8AE0)),
-                          ),
-                          errorBorder: new OutlineInputBorder(
-                            borderRadius: new BorderRadius.circular(10.0),
-                            borderSide: BorderSide(color: colorBlue),
-                          ),
-                          disabledBorder: InputBorder.none,
-                          alignLabelWithHint: true,
-                          hintStyle: TextStyle(
-                              color: Colors.black,
-                              decorationColor: Colors.white),
-                          hintText: 'Enter Name',
-                          errorText: nerror,
+                          controller: Name,
                         ),
-                        controller: Name,
                       ),
-                      TextFormField(
-                        onChanged: (value) => {
-                          if (value.isEmpty)
-                            {
-                              setState(() {
-                                validate = false;
-                                reerror = 'Plese fill';
-                              }),
-                            }
-                          else
-                            {
-                              setState(() {
-                                validate = true;
-                                reerror = '';
-                                if (!value.contains('.com')) {
-                                  reerror = 'Email not valid';
-                                  setState(() {
-                                    validate = false;
-                                  });
-                                } else {
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: 8.0),
+                        child: TextFormField(
+                          onChanged: (value) => {
+                            if (value.isEmpty)
+                              {
+                                setState(() {
+                                  validate1 = false;
+                                  reerror = 'Plese fill';
+                                }),
+                              }
+                            else
+                              {
+                                setState(() {
+                                  validate1 = true;
                                   reerror = '';
-                                }
-                              }),
-                            }
-                        },
-                        textAlign: TextAlign.start,
-                        decoration: InputDecoration(
-                          fillColor: Color(0xfffaebeb),
-                          contentPadding: EdgeInsets.all(12),
-                          border: new OutlineInputBorder(
-                            borderRadius: new BorderRadius.circular(10.0),
-                            borderSide:
-                                BorderSide(color: Color.fromARGB(255, 0, 0, 0)),
+                                  if (!value.contains('gmail.com')) {
+                                    reerror = 'Email not valid';
+                                    setState(() {
+                                      validate1 = false;
+                                    });
+                                  } else {
+                                    reerror = '';
+                                  }
+                                }),
+                              }
+                          },
+                          textAlign: TextAlign.start,
+                          decoration: InputDecoration(
+                            fillColor: Color(0xfffaebeb),
+                            contentPadding: EdgeInsets.all(12),
+                            border: new OutlineInputBorder(
+                              borderRadius: new BorderRadius.circular(10.0),
+                              borderSide: BorderSide(
+                                  color: Color.fromARGB(255, 0, 0, 0)),
+                            ),
+                            focusedBorder: new OutlineInputBorder(
+                              borderRadius: new BorderRadius.circular(10.0),
+                              borderSide: BorderSide(color: Color(0xff3F8AE0)),
+                            ),
+                            errorBorder: new OutlineInputBorder(
+                              borderRadius: new BorderRadius.circular(10.0),
+                              borderSide: BorderSide(color: colorBlue),
+                            ),
+                            disabledBorder: InputBorder.none,
+                            alignLabelWithHint: true,
+                            hintStyle: TextStyle(
+                                color: Colors.black,
+                                decorationColor: Colors.white),
+                            hintText: 'Enter Email',
+                            errorText: reerror,
                           ),
-                          focusedBorder: new OutlineInputBorder(
-                            borderRadius: new BorderRadius.circular(10.0),
-                            borderSide: BorderSide(color: Color(0xff3F8AE0)),
-                          ),
-                          errorBorder: new OutlineInputBorder(
-                            borderRadius: new BorderRadius.circular(10.0),
-                            borderSide: BorderSide(color: colorBlue),
-                          ),
-                          disabledBorder: InputBorder.none,
-                          alignLabelWithHint: true,
-                          hintStyle: TextStyle(
-                              color: Colors.black,
-                              decorationColor: Colors.white),
-                          hintText: 'Enter Email',
-                          errorText: reerror,
+                          controller: rEmail,
                         ),
-                        controller: rEmail,
                       ),
-                      TextFormField(
-                        onChanged: (value) => {
-                          if (value.isEmpty)
-                            {
-                              setState(() {
-                                validate = false;
-                                cerror = 'Plese fill';
-                              }),
-                            }
-                          else
-                            {
-                              setState(() {
-                                validate = true;
-                                cerror = '';
-                              }),
-                            }
-                        },
-                        keyboardType: TextInputType.phone,
-                        textAlign: TextAlign.start,
-                        decoration: InputDecoration(
-                          fillColor: Color(0xfffaebeb),
-                          contentPadding: EdgeInsets.all(12),
-                          border: new OutlineInputBorder(
-                            borderRadius: new BorderRadius.circular(10.0),
-                            borderSide:
-                                BorderSide(color: Color.fromARGB(255, 0, 0, 0)),
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: 8.0),
+                        child: TextFormField(
+                          onChanged: (value) => {
+                            if (value.isEmpty)
+                              {
+                                setState(() {
+                                  validate1 = false;
+                                  cerror = 'Plese fill';
+                                }),
+                              }
+                            else
+                              {
+                                setState(() {
+                                  validate1 = true;
+                                  cerror = '';
+                                }),
+                              }
+                          },
+                          textAlign: TextAlign.start,
+                          decoration: InputDecoration(
+                            fillColor: Color(0xfffaebeb),
+                            contentPadding: EdgeInsets.all(12),
+                            border: new OutlineInputBorder(
+                              borderRadius: new BorderRadius.circular(10.0),
+                              borderSide: BorderSide(
+                                  color: Color.fromARGB(255, 0, 0, 0)),
+                            ),
+                            focusedBorder: new OutlineInputBorder(
+                              borderRadius: new BorderRadius.circular(10.0),
+                              borderSide: BorderSide(color: Color(0xff3F8AE0)),
+                            ),
+                            errorBorder: new OutlineInputBorder(
+                              borderRadius: new BorderRadius.circular(10.0),
+                              borderSide: BorderSide(color: colorBlue),
+                            ),
+                            disabledBorder: InputBorder.none,
+                            alignLabelWithHint: true,
+                            hintStyle: TextStyle(
+                                color: Colors.black,
+                                decorationColor: Colors.white),
+                            hintText: '+1(xxx)xxx-xxxx',
+                            errorText: cerror,
                           ),
-                          focusedBorder: new OutlineInputBorder(
-                            borderRadius: new BorderRadius.circular(10.0),
-                            borderSide: BorderSide(color: Color(0xff3F8AE0)),
-                          ),
-                          errorBorder: new OutlineInputBorder(
-                            borderRadius: new BorderRadius.circular(10.0),
-                            borderSide: BorderSide(color: colorBlue),
-                          ),
-                          disabledBorder: InputBorder.none,
-                          alignLabelWithHint: true,
-                          hintStyle: TextStyle(
-                              color: Colors.black,
-                              decorationColor: Colors.white),
-                          hintText: 'Contact Number',
-                          errorText: cerror,
+                          controller: contact,
                         ),
-                        controller: contact,
                       ),
-                      TextFormField(
-                        onChanged: (value) => {
-                          if (value.isEmpty)
-                            {
-                              setState(() {
-                                validate = false;
-                                eEerror = 'Plese fill';
-                              }),
-                            }
-                          else
-                            {
-                              setState(() {
-                                validate = true;
-                                eEerror = '';
-                                if (!value.contains('.com')) {
-                                  eEerror = 'Email not valid';
-                                  setState(() {
-                                    validate = false;
-                                  });
-                                } else {
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: 8.0),
+                        child: TextFormField(
+                          onChanged: (value) => {
+                            if (value.isEmpty)
+                              {
+                                setState(() {
+                                  validate1 = false;
+                                  eEerror = 'Plese fill';
+                                }),
+                              }
+                            else
+                              {
+                                setState(() {
+                                  validate1 = true;
                                   eEerror = '';
-                                }
-                              }),
-                            }
-                        },
-                        keyboardType: TextInputType.emailAddress,
-                        textAlign: TextAlign.start,
-                        decoration: InputDecoration(
-                          fillColor: Color(0xfffaebeb),
-                          contentPadding: EdgeInsets.all(12),
-                          border: new OutlineInputBorder(
-                            borderRadius: new BorderRadius.circular(10.0),
-                            borderSide:
-                                BorderSide(color: Color.fromARGB(255, 0, 0, 0)),
+                                  if (!value.contains('.com')) {
+                                    eEerror = 'Email not valid';
+                                    setState(() {
+                                      validate1 = false;
+                                    });
+                                  } else {
+                                    eEerror = '';
+                                  }
+                                }),
+                              }
+                          },
+                          keyboardType: TextInputType.emailAddress,
+                          textAlign: TextAlign.start,
+                          decoration: InputDecoration(
+                            fillColor: Color(0xfffaebeb),
+                            contentPadding: EdgeInsets.all(12),
+                            border: new OutlineInputBorder(
+                              borderRadius: new BorderRadius.circular(10.0),
+                              borderSide: BorderSide(
+                                  color: Color.fromARGB(255, 0, 0, 0)),
+                            ),
+                            focusedBorder: new OutlineInputBorder(
+                              borderRadius: new BorderRadius.circular(10.0),
+                              borderSide: BorderSide(color: Color(0xff3F8AE0)),
+                            ),
+                            errorBorder: new OutlineInputBorder(
+                              borderRadius: new BorderRadius.circular(10.0),
+                              borderSide: BorderSide(color: colorBlue),
+                            ),
+                            disabledBorder: InputBorder.none,
+                            alignLabelWithHint: true,
+                            hintStyle: TextStyle(
+                                color: Colors.black,
+                                decorationColor: Colors.white),
+                            hintText: 'Emergency Email',
+                            errorText: eEerror,
                           ),
-                          focusedBorder: new OutlineInputBorder(
-                            borderRadius: new BorderRadius.circular(10.0),
-                            borderSide: BorderSide(color: Color(0xff3F8AE0)),
-                          ),
-                          errorBorder: new OutlineInputBorder(
-                            borderRadius: new BorderRadius.circular(10.0),
-                            borderSide: BorderSide(color: colorBlue),
-                          ),
-                          disabledBorder: InputBorder.none,
-                          alignLabelWithHint: true,
-                          hintStyle: TextStyle(
-                              color: Colors.black,
-                              decorationColor: Colors.white),
-                          hintText: 'Emergency Email',
-                          errorText: eEerror,
+                          controller: eEmail,
                         ),
-                        controller: eEmail,
                       ),
-                      TextFormField(
-                        onChanged: (value) => {
-                          if (value.isEmpty)
-                            {
-                              setState(() {
-                                validate = false;
-                                eCerror = 'Plese fill';
-                              }),
-                            }
-                          else
-                            {
-                              setState(() {
-                                validate = true;
-                                eCerror = '';
-                              }),
-                            }
-                        },
-                        keyboardType: TextInputType.phone,
-                        textAlign: TextAlign.start,
-                        decoration: InputDecoration(
-                          fillColor: Color(0xfffaebeb),
-                          contentPadding: EdgeInsets.all(12),
-                          border: new OutlineInputBorder(
-                            borderRadius: new BorderRadius.circular(10.0),
-                            borderSide:
-                                BorderSide(color: Color.fromARGB(255, 0, 0, 0)),
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: 8.0),
+                        child: TextFormField(
+                          onChanged: (value) => {
+                            if (value.isEmpty)
+                              {
+                                setState(() {
+                                  validate1 = false;
+                                  eCerror = 'Plese fill';
+                                }),
+                              }
+                            else
+                              {
+                                setState(() {
+                                  validate1 = true;
+                                  eCerror = '';
+                                }),
+                              }
+                          },
+                          textAlign: TextAlign.start,
+                          decoration: InputDecoration(
+                            fillColor: Color(0xfffaebeb),
+                            contentPadding: EdgeInsets.all(12),
+                            border: new OutlineInputBorder(
+                              borderRadius: new BorderRadius.circular(10.0),
+                              borderSide: BorderSide(
+                                  color: Color.fromARGB(255, 0, 0, 0)),
+                            ),
+                            focusedBorder: new OutlineInputBorder(
+                              borderRadius: new BorderRadius.circular(10.0),
+                              borderSide: BorderSide(color: Color(0xff3F8AE0)),
+                            ),
+                            errorBorder: new OutlineInputBorder(
+                              borderRadius: new BorderRadius.circular(10.0),
+                              borderSide: BorderSide(color: colorBlue),
+                            ),
+                            disabledBorder: InputBorder.none,
+                            alignLabelWithHint: true,
+                            hintStyle: TextStyle(
+                                color: Colors.black,
+                                decorationColor: Colors.white),
+                            hintText: '+1(xxx)xxx-xxxx',
+                            errorText: eCerror,
                           ),
-                          focusedBorder: new OutlineInputBorder(
-                            borderRadius: new BorderRadius.circular(10.0),
-                            borderSide: BorderSide(color: Color(0xff3F8AE0)),
-                          ),
-                          errorBorder: new OutlineInputBorder(
-                            borderRadius: new BorderRadius.circular(10.0),
-                            borderSide: BorderSide(color: colorBlue),
-                          ),
-                          disabledBorder: InputBorder.none,
-                          alignLabelWithHint: true,
-                          hintStyle: TextStyle(
-                              color: Colors.black,
-                              decorationColor: Colors.white),
-                          hintText: 'Emergency Contact',
-                          errorText: eCerror,
+                          controller: econtact,
                         ),
-                        controller: econtact,
                       ),
-                      TextFormField(
-                        onChanged: (value) => {
-                          if (value.isEmpty)
-                            {
-                              setState(() {
-                                validate = false;
-                                rperror = 'Plese fill';
-                              }),
-                            }
-                          else
-                            {
-                              setState(() {
-                                validate = true;
-                                rperror = '';
-                                if (value.length <= 7) {
-                                  rperror = 'password not valid';
-                                  setState(() {
-                                    validate = false;
-                                  });
-                                } else {
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: 6.0),
+                        child: TextFormField(
+                          onChanged: (value) => {
+                            if (value.isEmpty)
+                              {
+                                setState(() {
+                                  validate1 = false;
+                                  rperror = 'Plese fill';
+                                }),
+                              }
+                            else
+                              {
+                                setState(() {
+                                  validate1 = true;
                                   rperror = '';
-                                }
-                              }),
-                            }
-                        },
-                        keyboardType: TextInputType.text,
-                        textAlign: TextAlign.start,
-                        obscureText: true,
-                        decoration: InputDecoration(
-                          fillColor: Color(0xfffaebeb),
-                          contentPadding: EdgeInsets.all(12),
-                          border: new OutlineInputBorder(
-                            borderRadius: new BorderRadius.circular(10.0),
-                            borderSide:
-                                BorderSide(color: Color.fromARGB(255, 0, 0, 0)),
+                                  if (value.length <= 8) {
+                                    rperror = 'password not valid';
+                                    setState(() {
+                                      validate1 = false;
+                                    });
+                                  } else {
+                                    rperror = '';
+                                  }
+                                }),
+                              }
+                          },
+                          keyboardType: TextInputType.text,
+                          textAlign: TextAlign.start,
+                          obscureText: true,
+                          decoration: InputDecoration(
+                            fillColor: Color(0xfffaebeb),
+                            contentPadding: EdgeInsets.all(12),
+                            border: new OutlineInputBorder(
+                              borderRadius: new BorderRadius.circular(10.0),
+                              borderSide: BorderSide(
+                                  color: Color.fromARGB(255, 0, 0, 0)),
+                            ),
+                            focusedBorder: new OutlineInputBorder(
+                              borderRadius: new BorderRadius.circular(10.0),
+                              borderSide: BorderSide(color: Color(0xff3F8AE0)),
+                            ),
+                            errorBorder: new OutlineInputBorder(
+                              borderRadius: new BorderRadius.circular(10.0),
+                              borderSide: BorderSide(color: colorBlue),
+                            ),
+                            disabledBorder: InputBorder.none,
+                            alignLabelWithHint: true,
+                            hintStyle: TextStyle(
+                              color: Colors.black,
+                            ),
+                            hintText: 'Enter Password',
+                            errorText: rperror,
                           ),
-                          focusedBorder: new OutlineInputBorder(
-                            borderRadius: new BorderRadius.circular(10.0),
-                            borderSide: BorderSide(color: Color(0xff3F8AE0)),
-                          ),
-                          errorBorder: new OutlineInputBorder(
-                            borderRadius: new BorderRadius.circular(10.0),
-                            borderSide: BorderSide(color: colorBlue),
-                          ),
-                          disabledBorder: InputBorder.none,
-                          alignLabelWithHint: true,
-                          hintStyle: TextStyle(
-                            color: Colors.black,
-                          ),
-                          hintText: 'Enter Password',
-                          errorText: rperror,
+                          controller: rpassword,
                         ),
-                        controller: rpassword,
                       ),
                     ],
                   ),
@@ -409,14 +438,26 @@ class _LoginState extends State<Login> {
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Container(
-                    child: 'Sign In'
-                        .text
-                        .fontWeight(FontWeight.bold)
-                        .xl3
-                        .white
-                        .make()
-                        .py12()),
-                '$emerror'.text.medium.red400.make().py8(),
+                    child: Padding(
+                  padding: const EdgeInsets.only(top: 14.0),
+                  child: 'Sign In'
+                      .text
+                      .fontWeight(FontWeight.bold)
+                      .xl3
+                      .white
+                      .make(),
+                )),
+                Padding(
+                  padding: const EdgeInsets.only(top: 8, bottom: 8.0),
+                  child: '$emerror'
+                      .text
+                      .align(TextAlign.justify)
+                      .red400
+                      .medium
+                      .maxFontSize(12)
+                      .minFontSize(10)
+                      .make(),
+                ),
                 Container(
                   width: 315,
                   margin: EdgeInsets.only(left: 20, right: 20),
@@ -427,111 +468,117 @@ class _LoginState extends State<Login> {
                   ),
                   child: Column(
                     children: [
-                      TextFormField(
-                        onChanged: (value) => {
-                          if (value.isEmpty)
-                            {
-                              setState(() {
-                                validate = false;
-                                eerror = 'Plese fill';
-                              }),
-                            }
-                          else
-                            {
-                              setState(() {
-                                validate = true;
-                                eerror = '';
-                                if (!value.contains('.com')) {
-                                  eerror = 'Email not valid';
-                                  setState(() {
-                                    validate = false;
-                                  });
-                                } else {
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: 8.0),
+                        child: TextFormField(
+                          onChanged: (value) => {
+                            if (value.isEmpty)
+                              {
+                                setState(() {
+                                  validate = false;
+                                  eerror = 'Plese fill';
+                                }),
+                              }
+                            else
+                              {
+                                setState(() {
+                                  validate = true;
                                   eerror = '';
-                                }
-                              }),
-                            }
-                        },
-                        textAlign: TextAlign.start,
-                        decoration: InputDecoration(
-                          fillColor: Color(0xfffaebeb),
-                          contentPadding: EdgeInsets.all(12),
-                          border: new OutlineInputBorder(
-                            borderRadius: new BorderRadius.circular(10.0),
-                            borderSide:
-                                BorderSide(color: Color.fromARGB(255, 0, 0, 0)),
+                                  if (!value.contains('.com')) {
+                                    eerror = 'Email not valid';
+                                    setState(() {
+                                      validate = false;
+                                    });
+                                  } else {
+                                    eerror = '';
+                                  }
+                                }),
+                              }
+                          },
+                          textAlign: TextAlign.start,
+                          decoration: InputDecoration(
+                            fillColor: Color(0xfffaebeb),
+                            contentPadding: EdgeInsets.all(12),
+                            border: new OutlineInputBorder(
+                              borderRadius: new BorderRadius.circular(10.0),
+                              borderSide: BorderSide(
+                                  color: Color.fromARGB(255, 0, 0, 0)),
+                            ),
+                            focusedBorder: new OutlineInputBorder(
+                              borderRadius: new BorderRadius.circular(10.0),
+                              borderSide: BorderSide(color: Color(0xff3F8AE0)),
+                            ),
+                            errorBorder: new OutlineInputBorder(
+                              borderRadius: new BorderRadius.circular(10.0),
+                              borderSide: BorderSide(color: colorBlue),
+                            ),
+                            disabledBorder: InputBorder.none,
+                            alignLabelWithHint: true,
+                            hintStyle: TextStyle(
+                                color: Colors.black,
+                                decorationColor: Colors.white),
+                            hintText: 'Enter Email',
+                            errorText: eerror,
                           ),
-                          focusedBorder: new OutlineInputBorder(
-                            borderRadius: new BorderRadius.circular(10.0),
-                            borderSide: BorderSide(color: Color(0xff3F8AE0)),
-                          ),
-                          errorBorder: new OutlineInputBorder(
-                            borderRadius: new BorderRadius.circular(10.0),
-                            borderSide: BorderSide(color: colorBlue),
-                          ),
-                          disabledBorder: InputBorder.none,
-                          alignLabelWithHint: true,
-                          hintStyle: TextStyle(
-                              color: Colors.black,
-                              decorationColor: Colors.white),
-                          hintText: 'Enter Email',
-                          errorText: eerror,
+                          controller: Email,
                         ),
-                        controller: Email,
                       ),
-                      TextFormField(
-                        onChanged: (value) => {
-                          if (value.isEmpty)
-                            {
-                              setState(() {
-                                validate = false;
-                                perror = 'Plese fill';
-                              }),
-                            }
-                          else
-                            {
-                              setState(() {
-                                validate = true;
-                                perror = '';
-                                if (value.length <= 7) {
-                                  perror = 'password not valid';
-                                  setState(() {
-                                    validate = false;
-                                  });
-                                } else {
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: 8.0),
+                        child: TextFormField(
+                          onChanged: (value) => {
+                            if (value.isEmpty)
+                              {
+                                setState(() {
+                                  validate = false;
+                                  perror = 'Plese fill';
+                                }),
+                              }
+                            else
+                              {
+                                setState(() {
+                                  validate = true;
                                   perror = '';
-                                }
-                              }),
-                            }
-                        },
-                        keyboardType: TextInputType.text,
-                        textAlign: TextAlign.start,
-                        obscureText: true,
-                        decoration: InputDecoration(
-                          fillColor: Color(0xfffaebeb),
-                          contentPadding: EdgeInsets.all(12),
-                          border: new OutlineInputBorder(
-                            borderRadius: new BorderRadius.circular(10.0),
-                            borderSide:
-                                BorderSide(color: Color.fromARGB(255, 0, 0, 0)),
+                                  if (value.length <= 8) {
+                                    perror = 'password not valid';
+                                    setState(() {
+                                      validate = false;
+                                    });
+                                  } else {
+                                    perror = '';
+                                  }
+                                }),
+                              }
+                          },
+                          keyboardType: TextInputType.text,
+                          textAlign: TextAlign.start,
+                          obscureText: true,
+                          decoration: InputDecoration(
+                            fillColor: Color(0xfffaebeb),
+                            contentPadding: EdgeInsets.all(12),
+                            border: new OutlineInputBorder(
+                              borderRadius: new BorderRadius.circular(10.0),
+                              borderSide: BorderSide(
+                                  color: Color.fromARGB(255, 0, 0, 0)),
+                            ),
+                            focusedBorder: new OutlineInputBorder(
+                              borderRadius: new BorderRadius.circular(10.0),
+                              borderSide: BorderSide(color: Color(0xff3F8AE0)),
+                            ),
+                            errorBorder: new OutlineInputBorder(
+                              borderRadius: new BorderRadius.circular(10.0),
+                              borderSide: BorderSide(color: colorBlue),
+                            ),
+                            disabledBorder: InputBorder.none,
+                            alignLabelWithHint: true,
+                            hintStyle: TextStyle(
+                              color: Colors.black,
+                            ),
+                            hintText: 'Enter Password',
+                            errorText: perror,
                           ),
-                          focusedBorder: new OutlineInputBorder(
-                            borderRadius: new BorderRadius.circular(10.0),
-                            borderSide: BorderSide(color: Color(0xff3F8AE0)),
-                          ),
-                          errorBorder: new OutlineInputBorder(
-                            borderRadius: new BorderRadius.circular(10.0),
-                            borderSide: BorderSide(color: colorBlue),
-                          ),
-                          disabledBorder: InputBorder.none,
-                          alignLabelWithHint: true,
-                          hintStyle: TextStyle(
-                            color: Colors.black,
-                          ),
-                          hintText: 'Enter Password',
-                          errorText: perror,
+                          controller: password,
                         ),
-                        controller: password,
                       ),
                     ],
                   ),
@@ -573,7 +620,7 @@ class _LoginState extends State<Login> {
                       height: 60,
                       child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
-                              primary: Color.fromARGB(255, 34, 34, 34),
+                              backgroundColor: Color.fromARGB(255, 34, 34, 34),
                               shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(70)),
                               animationDuration: Duration(seconds: 1)),
@@ -598,7 +645,7 @@ class _LoginState extends State<Login> {
                       height: 60,
                       child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
-                              primary: Color.fromARGB(255, 240, 89, 19),
+                              backgroundColor: Color.fromARGB(255, 240, 89, 19),
                               shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(70)),
                               animationDuration: Duration(seconds: 1)),
@@ -630,35 +677,36 @@ class _LoginState extends State<Login> {
   }
 
 //register param function
-  setLogin() {
+  setLogin() async {
     for (int i = 0; i < user.length; i++) {
       if (user[i]["email"] == Email.text.toString()) {
         var email = user[i]["email"];
         var Name = user[i]["Name"];
         var eemail = user[i]["eemail"];
+        var number = user[i]["econtact"];
         storage.setItem("email", email.toString());
         storage.setItem("name", Name.toString());
         storage.setItem("eemail", eemail.toString());
-        print(storage.setItem("email", email.toString()));
-        print(storage.setItem("name", Name.toString()));
-        print(storage.setItem("eemail", eemail.toString()));
+        storage.setItem("number", number.toString());
       }
     }
   }
 
 //Login function
   Login() async {
+    var url = Uri.http("${ipadd}", '${login}', {'q': '{http}'});
+
     if (validate == true && perror == '' && eerror == '') {
       setState(() {
-        fetchuser();
         emerror = '';
       });
-      var url = Uri.http("192.168.231.146", '/demo/login.php', {'q': '{http}'});
+      print("login start");
       var response = await http.post(url, body: {
         "email": Email.text.toString(),
         "password": password.text.toString(),
       });
       var data = json.decode(response.body);
+      print("login start");
       print(response.body);
       if (data.toString() == "Success") {
         Fluttertoast.showToast(
@@ -671,12 +719,13 @@ class _LoginState extends State<Login> {
           setLogin();
         });
 
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => MyApp(Email.text.toString()),
-          ),
-        );
+        var ee = storage.getItem("email");
+        print("email is ${ee}");
+        if (ee != null) {
+          MyApp.navigatorKey.currentState?.pushNamedAndRemoveUntil(
+              '/', (route) => false,
+              arguments: Email.text.toString());
+        }
       } else {
         Fluttertoast.showToast(
           backgroundColor: Colors.red,
@@ -684,6 +733,9 @@ class _LoginState extends State<Login> {
           msg: 'Username and password invalid',
           toastLength: Toast.LENGTH_SHORT,
         );
+        setState(() {
+          emerror = 'Email or password wrong';
+        });
       }
     } else {
       setState(() {
@@ -697,55 +749,53 @@ class _LoginState extends State<Login> {
     storage.setItem("email", rEmail.text.toString());
     storage.setItem("eemail", eEmail.text.toString());
     storage.setItem("name", Name.text.toString());
+    storage.setItem("number", econtact.text.toString());
   }
 
 //register function
   Register() async {
-    if (validate != true) {
+    if (validate1 == true) {
       setState(() {
         merror = '';
       });
+      var url = Uri.http("${ipadd}", '${register}', {'q': '{https}'});
+      var response = await http.post(url, body: {
+        "email": rEmail.text.toString(),
+        "Name": Name.text.toString(),
+        "eemail": eEmail.text.toString(),
+        "contact": contact.text.toString(),
+        "econtact": econtact.text.toString(),
+        "password": rpassword.text.toString(),
+      });
+      var data = json.decode(response.body);
+      print(data);
+      print('data');
+      if (data == "Success") {
+        Fluttertoast.showToast(
+          backgroundColor: Colors.green,
+          textColor: Colors.white,
+          msg: 'Registration Successful',
+          toastLength: Toast.LENGTH_SHORT,
+        );
+        setState(() {
+          setRegister();
+          merror = 'please fill Properly';
+        });
+        MyApp.navigatorKey.currentState?.pushNamedAndRemoveUntil(
+            '/', (route) => false,
+            arguments: rEmail.text.toString());
+      } else {
+        Fluttertoast.showToast(
+          backgroundColor: Colors.orange,
+          textColor: Colors.white,
+          msg: 'User already registerd!',
+          toastLength: Toast.LENGTH_SHORT,
+        );
+      }
     } else {
       setState(() {
         merror = 'please fill Properly';
       });
-    }
-
-    var url =
-        Uri.http("192.168.231.146", '/demo/register.php', {'q': '{http}'});
-    var response = await http.post(url, body: {
-      "email": rEmail.text.toString(),
-      "Name": Name.text.toString(),
-      "eemail": eEmail.text.toString(),
-      "contact": contact.text.toString(),
-      "econtact": econtact.text.toString(),
-      "password": rpassword.text.toString(),
-    });
-    var data = json.decode(response.body);
-    if (data == "Error") {
-      Fluttertoast.showToast(
-        backgroundColor: Colors.orange,
-        textColor: Colors.white,
-        msg: 'Somting Wrong!',
-        toastLength: Toast.LENGTH_SHORT,
-      );
-    } else {
-      Fluttertoast.showToast(
-        backgroundColor: Colors.green,
-        textColor: Colors.white,
-        msg: 'Registration Successful',
-        toastLength: Toast.LENGTH_SHORT,
-      );
-      setState(() {
-        setRegister();
-        merror = 'please fill Properly';
-      });
-      Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (context) => MyApp(rEmail.text),
-        ),
-      );
     }
   }
 }

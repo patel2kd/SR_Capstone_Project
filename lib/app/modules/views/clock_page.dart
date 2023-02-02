@@ -1,7 +1,7 @@
 import 'dart:async';
-import 'package:alertmind/utils/constants.dart';
 import 'package:flutter/material.dart';
-import 'package:alertmind/app/data/theme_data.dart';
+import 'package:flutter_alarm/app/data/theme_data.dart';
+import 'package:flutter_alarm/utils/constants.dart';
 import 'package:intl/intl.dart';
 
 import 'clockview.dart';
@@ -22,30 +22,15 @@ class _ClockPageState extends State<ClockPage> {
     if (!timezoneString.startsWith('-')) offsetSign = '+';
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Clock "),
-        backgroundColor: colorBlue, //background color of app bar
-      ),
+      appBar: AppBar(title: Text("Clock")),
+      backgroundColor: colorbBlue,
       body: Container(
-        color: colorbBlue,
-        padding: EdgeInsets.symmetric(horizontal: 32, vertical: 64),
+        padding: EdgeInsets.symmetric(horizontal: 32, vertical: 30),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: Text(
-                'Clock',
-                style: TextStyle(
-                    fontFamily: 'avenir',
-                    fontWeight: FontWeight.w700,
-                    color: CustomColors.primaryTextColor,
-                    fontSize: 24),
-              ),
-            ),
-            Flexible(
-              flex: 2,
+              flex: 3,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
@@ -53,9 +38,16 @@ class _ClockPageState extends State<ClockPage> {
                   Text(
                     formattedDate,
                     style: TextStyle(
+                        shadows: [
+                          Shadow(
+                            blurRadius: 68.0, // shadow blur
+                            color: colorBlue, // shadow color
+                            offset: Offset(2.0, 2.0), //  fontFamily: 'avenir',
+                          ),
+                        ],
                         fontFamily: 'avenir',
                         fontWeight: FontWeight.w300,
-                        color: CustomColors.primaryTextColor,
+                        color: CustomColors.clockBG,
                         fontSize: 20),
                   ),
                 ],
@@ -67,7 +59,7 @@ class _ClockPageState extends State<ClockPage> {
               child: Align(
                 alignment: Alignment.center,
                 child: ClockView(
-                  size: MediaQuery.of(context).size.height / 4,
+                  size: MediaQuery.of(context).size.height / 3,
                 ),
               ),
             ),
@@ -82,7 +74,7 @@ class _ClockPageState extends State<ClockPage> {
                     style: TextStyle(
                         fontFamily: 'avenir',
                         fontWeight: FontWeight.w500,
-                        color: CustomColors.primaryTextColor,
+                        color: CustomColors.clockBG,
                         fontSize: 24),
                   ),
                   SizedBox(height: 16),
@@ -90,14 +82,14 @@ class _ClockPageState extends State<ClockPage> {
                     children: <Widget>[
                       Icon(
                         Icons.language,
-                        color: CustomColors.primaryTextColor,
+                        color: CustomColors.clockBG,
                       ),
                       SizedBox(width: 16),
                       Text(
                         'UTC' + offsetSign + timezoneString,
                         style: TextStyle(
                             fontFamily: 'avenir',
-                            color: CustomColors.primaryTextColor,
+                            color: CustomColors.clockBG,
                             fontSize: 14),
                       ),
                     ],
@@ -148,12 +140,23 @@ class DigitalClockWidgetState extends State<DigitalClockWidget> {
   @override
   Widget build(BuildContext context) {
     print('=====>digital clock updated');
-    return Text(
-      formattedTime,
-      style: TextStyle(
-          fontFamily: 'avenir',
-          color: CustomColors.primaryTextColor,
-          fontSize: 64),
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 18.0),
+      child: Text(
+        formattedTime,
+        style: TextStyle(
+          shadows: [
+            Shadow(
+              blurRadius: 10.0, // shadow blur
+              color: colorBlue, // shadow color
+              offset: Offset(2.0, 2.0), //  fontFamily: 'avenir',
+            ),
+          ],
+          fontWeight: FontWeight.bold,
+          color: Color.fromARGB(255, 255, 255, 255),
+          fontSize: 64,
+        ),
+      ),
     );
   }
 }

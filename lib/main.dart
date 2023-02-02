@@ -1,51 +1,45 @@
-import 'package:alertmind/Dashbord.dart';
-import 'package:alertmind/main.dart';
-import 'app/modules/views/alarm_helper.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:alertmind/Login.dart';
-import 'package:alertmind/utils/constants.dart';
-import 'package:alertmind/Home_page.dart';
+import 'package:flutter_alarm/Home_page.dart';
+import 'package:flutter_alarm/Login.dart';
+import 'mainscreen.dart';
 import 'package:localstorage/localstorage.dart';
+import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:velocity_x/velocity_x.dart';
-import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'app/data/enums.dart';
-import 'app/data/models/menu_info.dart';
-import 'app/modules/views/homepage.dart';
+import 'utils/constants.dart';
+
+LocalStorage storage = new LocalStorage('localstorage_app');
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await NotificationController.initializeLocalNotifications();
   SystemChrome.setSystemUIOverlayStyle(
     const SystemUiOverlayStyle(
         statusBarColor: colorBlue,
         systemNavigationBarColor: colorBlue,
         systemNavigationBarIconBrightness: Brightness.light),
   );
-  runApp(MyApp(''));
+  runApp(MyApp());
 }
 
-late String ss = '';
+late String ss =
+    storage.getItem("email") == null ? '' : storage.getItem("email");
 
-class MyApp extends StatefulWidget {
-  final LocalStorage storage = new LocalStorage('localstorage_app');
-
+class MyApp1 extends StatefulWidget {
   late final String params;
-  MyApp(String params) {
+  MyApp1(String params) {
     this.params = params;
     if (params == storage.getItem('email')) {
       ss = params;
     }
   }
+
   @override
-  State<MyApp> createState() => _MyAppState();
+  State<MyApp1> createState() => _MyApp1State();
 }
 
-class _MyAppState extends State<MyApp> {
+class _MyApp1State extends State<MyApp1> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -90,7 +84,7 @@ class _MainState extends State<Main> {
 
   Both() {
     if (ss == '') {
-      if (storage.getItem('email') != '') {
+      if (storage.getItem('email') == null) {
         return Login();
       } else {
         return Home_page();

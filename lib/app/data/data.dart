@@ -1,21 +1,13 @@
-import 'package:alertmind/app/data/enums.dart';
-import 'package:alertmind/app/data/models/alarm_info.dart';
-import 'package:alertmind/app/data/models/menu_info.dart';
-
-List<MenuInfo> menuItems = [
-  MenuInfo(MenuType.clock,
-      title: 'Clock', imageSource: 'assets/clock_icon.png'),
-  MenuInfo(MenuType.alarm,
-      title: 'Alarm', imageSource: 'assets/alarm_icon.png'),
-];
+import 'package:flutter_alarm/app/data/models/alarm_info.dart';
 
 List<AlarmInfo> alarms = [
   AlarmInfo(
       alarmDateTime: DateTime.now().add(Duration(hours: 1)),
       title: 'Office',
+      description: '2',
+      nid: 2,
+      isActive: 1,
+      isOn: 1,
+      isPending: 1,
       gradientColorIndex: 0),
-  AlarmInfo(
-      alarmDateTime: DateTime.now().add(Duration(hours: 2)),
-      title: 'Sport',
-      gradientColorIndex: 1),
 ];

@@ -1,30 +1,42 @@
 [
     {
-        "merged": "C:\\src\\alertmind\\build\\app\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\src\\alertmind\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "com.example.flutter_alarm.app-merged_res-30:/drawable_clock.png.flat",
+        "source": "com.example.flutter_alarm.app-main-24:/drawable/clock.png"
     },
     {
-        "merged": "C:\\src\\alertmind\\build\\app\\intermediates\\merged_res\\debug\\drawable-v21_launch_background.xml.flat",
-        "source": "C:\\src\\alertmind\\android\\app\\src\\main\\res\\drawable-v21\\launch_background.xml"
+        "merged": "com.example.flutter_alarm.app-merged_res-30:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.example.flutter_alarm.app-main-24:/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\src\\alertmind\\build\\app\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\src\\alertmind\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "com.example.flutter_alarm.app-merged_res-30:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.example.flutter_alarm.app-main-24:/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\src\\alertmind\\build\\app\\intermediates\\merged_res\\debug\\drawable_launch_background.xml.flat",
-        "source": "C:\\src\\alertmind\\android\\app\\src\\main\\res\\drawable\\launch_background.xml"
+        "merged": "com.example.flutter_alarm.app-merged_res-30:/drawable-v21_launch_background.xml.flat",
+        "source": "com.example.flutter_alarm.app-main-24:/drawable-v21/launch_background.xml"
     },
     {
-        "merged": "C:\\src\\alertmind\\build\\app\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\src\\alertmind\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "com.example.flutter_alarm.app-merged_res-30:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.example.flutter_alarm.app-main-24:/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\src\\alertmind\\build\\app\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "C:\\src\\alertmind\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "com.example.flutter_alarm.app-merged_res-30:/raw_launch_background.xml.flat",
+        "source": "com.example.flutter_alarm.app-main-24:/raw/launch_background.xml"
     },
     {
-        "merged": "C:\\src\\alertmind\\build\\app\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\src\\alertmind\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+        "merged": "com.example.flutter_alarm.app-merged_res-30:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.example.flutter_alarm.app-main-24:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.flutter_alarm.app-merged_res-30:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.example.flutter_alarm.app-main-24:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.flutter_alarm.app-merged_res-30:/raw_a_long_cold_sting.wav.flat",
+        "source": "com.example.flutter_alarm.app-main-24:/raw/a_long_cold_sting.wav"
+    },
+    {
+        "merged": "com.example.flutter_alarm.app-merged_res-30:/raw_alarm.mp3.flat",
+        "source": "com.example.flutter_alarm.app-main-24:/raw/alarm.mp3"
     }
 ]

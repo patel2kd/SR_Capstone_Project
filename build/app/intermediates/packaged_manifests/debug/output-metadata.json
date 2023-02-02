@@ -4,7 +4,7 @@
     "type": "PACKAGED_MANIFESTS",
     "kind": "Directory"
   },
-  "applicationId": "com.example.alertmind",
+  "applicationId": "com.example.flutter_alarm",
   "variantName": "debug",
   "elements": [
     {
